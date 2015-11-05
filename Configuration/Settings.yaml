@@ -11,3 +11,4 @@ TYPO3:
 Sfi:
   News:
     className: 'YouTube'
+    embedParams: 'rel=0&amp;showinfo=0'
