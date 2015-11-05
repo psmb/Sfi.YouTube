@@ -1,0 +1,13 @@
+{
+    "name": "sfi/youtube",
+    "type": "typo3-flow-package",
+    "description": "YouTube nodetype",
+    "require": {
+        "typo3/flow": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Sfi\\YouTube": "Classes"
+        }
+    }
+}

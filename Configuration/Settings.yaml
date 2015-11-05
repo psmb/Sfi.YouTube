@@ -1,0 +1,13 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        Sfi.YouTube: TRUE
+    userInterface:
+      translation:
+        autoInclude:
+          'Sfi.YouTube': ['NodeTypes/*']
+
+Sfi:
+  News:
+    className: 'YouTube'

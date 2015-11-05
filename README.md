@@ -1,0 +1,1 @@
+This package provides a YouTube nodetype with TypoScript rendering. TypoScript is included automatically.
