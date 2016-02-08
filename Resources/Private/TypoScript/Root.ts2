@@ -1,6 +1,6 @@
 prototype(Sfi.YouTube:YouTube) < prototype(TYPO3.TypoScript:Tag) {
     tagName = "div"
-    attributes.class = "${Configuration.setting('Sfi.YouTube.className')}"
+    attributes.class = ${Configuration.setting('Sfi.YouTube.className')}
     content = TYPO3.TypoScript:Tag {
         tagName = "iframe"
         attributes{
