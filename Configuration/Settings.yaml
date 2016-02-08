@@ -9,6 +9,6 @@ TYPO3:
           'Sfi.YouTube': ['NodeTypes/*']
 
 Sfi:
-  News:
+  YouTube:
     className: 'YouTube'
     embedParams: 'rel=0&amp;showinfo=0'
