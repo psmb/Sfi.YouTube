@@ -1,18 +1,15 @@
 prototype(Sfi.YouTube:YouTube) < prototype(TYPO3.TypoScript:Tag) {
-    @context.videoId = ${String.pregMatch(q(node).property('videoUrl'), '#(?:(?:youtu\.be\/)||(?:\?v=))([a-z0-9-]{11})#i')[1]}
-    @if.validYoutubeVideo = ${videoId}
-
-    tagName = "div"
-    attributes.class = ${Configuration.setting('Sfi.YouTube.className')}
-    content = TYPO3.TypoScript:Tag {
-            tagName = "iframe"
-            attributes {
-                    width = 853
-                    height = 480
-                    frameborder = "0"
-                    src = ${'//www.youtube.com/embed/' + videoId + '?' + Configuration.setting('Sfi.YouTube.embedParams')}
-                    allowfullscreen = true
-            }
-    }
-    @process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	attributes.class = ${Configuration.setting('Sfi.YouTube.className')}
+	content = TYPO3.TypoScript:Tag {
+		@context.videoId = ${String.pregMatch(q(node).property('videoUrl'), '/(?:(?:youtu\.be\/)||(?:\?v=))([a-z0-9-]{11})/i')[1]}
+		tagName = 'iframe'
+		attributes {
+			width = 853
+			height = 480
+			frameborder = 0
+			src = ${'//www.youtube.com/embed/' + videoId + '?' + Configuration.setting('Sfi.YouTube.embedParams')}
+			allowfullscreen = true
+		}
+	}
+	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
 }
