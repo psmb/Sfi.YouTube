@@ -19,4 +19,4 @@
       validation:
         'TYPO3.Neos/Validation/NotEmptyValidator': []
         regularExpression:
-          regularExpression: '/(?:(?:youtu\.be\/)||(?:\?v=))([a-z0-9-]{11})/i'
+          regularExpression: '/(?:(?:youtu\.be\/)||(?:\?v=))([a-z0-9-_]{11})/i'
