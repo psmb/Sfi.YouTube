@@ -1,7 +1,7 @@
 prototype(Sfi.YouTube:YouTube) < prototype(TYPO3.TypoScript:Tag) {
 	attributes.class = ${Configuration.setting('Sfi.YouTube.className')}
 	content = TYPO3.TypoScript:Tag {
-		@context.videoId = ${String.pregMatch(q(node).property('videoUrl'), '/(?:(?:youtu\.be\/)||(?:\?v=))([a-z0-9-]{11})/i')[1]}
+		@context.videoId = ${String.pregMatch(q(node).property('videoUrl'), '/(?:(?:youtu\.be\/)||(?:\?v=))([a-z0-9-_]{11})/i')[1]}
 		tagName = 'iframe'
 		attributes {
 			width = 853
