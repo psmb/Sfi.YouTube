@@ -2,6 +2,7 @@
     "name": "sfi/youtube",
     "type": "typo3-flow-package",
     "description": "YouTube nodetype",
+    "license": "MIT",
     "require": {
         "typo3/neos": ">2.0"
     },
