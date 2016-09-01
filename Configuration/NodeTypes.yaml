@@ -9,6 +9,13 @@
         youtube:
           label: 'YouTube'
   properties:
+    caption:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'youtube'
     videoUrl:
       type: string
       ui:

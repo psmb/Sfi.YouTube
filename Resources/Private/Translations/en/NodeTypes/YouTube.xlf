@@ -8,6 +8,9 @@
 			<trans-unit id="properties.videoUrl" xml:space="preserve">
 				<source>YouTube video url (e.g. http://www.youtube.com/watch?v=NzBT39gx-TE or youtu.be/NzBT39gx-TE)</source>
 			</trans-unit>
+			<trans-unit id="properties.caption" xml:space="preserve">
+				<source>Caption (optional)</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

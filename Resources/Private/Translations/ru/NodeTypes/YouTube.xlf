@@ -10,6 +10,10 @@
 				<source>YouTube video url (e.g. http://www.youtube.com/watch?v=NzBT39gx-TE or youtu.be/NzBT39gx-TE)</source>
 				<target>Ссылка на видео YouTube (например http://www.youtube.com/watch?v=NzBT39gx-TE или youtu.be/NzBT39gx-TE)</target>
 			</trans-unit>
+			<trans-unit id="properties.caption" xml:space="preserve">
+				<source>Caption (optional)</source>
+				<target>Подпись (опционально)</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
