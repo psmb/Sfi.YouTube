@@ -1,6 +1,6 @@
-prototype(Sfi.YouTube:YouTube) < prototype(TYPO3.TypoScript:Tag) {
+prototype(Sfi.YouTube:YouTube) < prototype(Neos.Fusion:Tag) {
 	attributes.class = ${Configuration.setting('Sfi.YouTube.className')}
-	content = TYPO3.TypoScript:Tag {
+	content = Neos.Fusion:Tag {
 		@context.videoId = ${String.pregMatch(q(node).property('videoUrl'), '/(?:(?:youtu\.be\/)|(?:v=))([a-z0-9-_]{11})/i')[1]}
 		tagName = 'iframe'
 		attributes {
