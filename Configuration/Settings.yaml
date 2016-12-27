@@ -1,14 +1,15 @@
-TYPO3:
-  Neos:
-    typoScript:
-      autoInclude:
-        Sfi.YouTube: TRUE
-    userInterface:
-      translation:
-        autoInclude:
-          'Sfi.YouTube': ['NodeTypes/*']
 
 Sfi:
   YouTube:
-    className: 'YouTube'
+    className: YouTube
     embedParams: 'rel=0&amp;showinfo=0'
+Neos:
+  Neos:
+    typoScript:
+      autoInclude:
+        Sfi.YouTube: true
+    userInterface:
+      translation:
+        autoInclude:
+          Sfi.YouTube:
+            - 'NodeTypes/*'
