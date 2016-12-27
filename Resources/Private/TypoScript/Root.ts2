@@ -11,5 +11,5 @@ prototype(Sfi.YouTube:YouTube) < prototype(Neos.Fusion:Tag) {
 			allowfullscreen = true
 		}
 	}
-	@process.contentElementWrapping = TYPO3.Neos:ContentElementWrapping
+	@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
 }
