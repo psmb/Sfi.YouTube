@@ -5,11 +5,11 @@ Sfi:
     embedParams: 'rel=0&amp;showinfo=0'
 Neos:
   Neos:
-    typoScript:
-      autoInclude:
-        Sfi.YouTube: true
     userInterface:
       translation:
         autoInclude:
           Sfi.YouTube:
             - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        Sfi.YouTube: true
