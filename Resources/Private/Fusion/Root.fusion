@@ -13,3 +13,24 @@ prototype(Sfi.YouTube:YouTube) < prototype(Neos.Fusion:Tag) {
 	}
 	@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
 }
+
+prototype(Sfi.YouTube:LocalVideo) < prototype(Neos.Fusion:Tag) {
+	tagName = 'video'
+	attributes {
+		width = '100%'
+		controls = ${true}
+		poster = ImageUri {
+			asset = ${node.properties.cover}
+		}
+	}
+	content = Neos.Fusion:Tag {
+		tagName = 'source'
+		attributes {
+			type = 'video/mp4'
+			src = Neos.Fusion:ResourceUri {
+				resource = ${node.properties.asset.resource}
+			}
+		}
+	}
+	@process.contentElementWrapping = Neos.Neos:ContentElementWrapping
+}
