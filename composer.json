@@ -1,6 +1,6 @@
 {
     "name": "sfi/youtube",
-    "type": "typo3-flow-package",
+    "type": "neos-package",
     "description": "YouTube nodetype",
     "license": "MIT",
     "require": {
