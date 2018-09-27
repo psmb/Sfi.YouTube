@@ -28,3 +28,35 @@
         Neos.Neos/Validation/NotEmptyValidator: {  }
         regularExpression:
           regularExpression: '/(?:(?:youtu\.be\/)|(?:v=))([a-z0-9-_]{11})/i'
+
+'Sfi.YouTube:LocalVideo':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: i18n
+    icon: icon-youtube-play
+    inspector:
+      groups:
+        asset:
+          label: Video
+  properties:
+    asset:
+      type: Neos\Media\Domain\Model\Asset
+      ui:
+        inspector:
+          group: asset
+        label: Файл
+        reloadIfChanged: true
+    caption:
+      type: string
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: asset
+    cover:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        reloadIfChanged: true
+        inspector:
+          group: asset

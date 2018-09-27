@@ -3,13 +3,16 @@
 	<file original="" product-name="Sfi.YouTube" source-language="en" datatype="plaintext">
 		<body>
 			<trans-unit id="ui.label" xml:space="preserve">
-				<source>YouTube</source>
+				<source>Video from file (mp4)</source>
 			</trans-unit>
-			<trans-unit id="properties.videoUrl" xml:space="preserve">
-				<source>YouTube video url (e.g. http://www.youtube.com/watch?v=NzBT39gx-TE or youtu.be/NzBT39gx-TE)</source>
+			<trans-unit id="properties.asset" xml:space="preserve">
+				<source>Video asset</source>
 			</trans-unit>
 			<trans-unit id="properties.caption" xml:space="preserve">
 				<source>Caption (optional)</source>
+			</trans-unit>
+			<trans-unit id="properties.cover" xml:space="preserve">
+				<source>Video cover (optional)</source>
 			</trans-unit>
 		</body>
 	</file>
