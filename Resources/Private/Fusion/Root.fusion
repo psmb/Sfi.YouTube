@@ -19,7 +19,7 @@ prototype(Sfi.YouTube:LocalVideo) < prototype(Neos.Fusion:Tag) {
 	attributes {
 		width = '100%'
 		controls = ${true}
-		poster = ImageUri {
+		poster = Neos.Neos:ImageUri {
 			asset = ${node.properties.cover}
 		}
 	}
